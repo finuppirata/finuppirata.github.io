@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.login-container {
+    width: 45%;
+    padding: 2rem;
+    margin-top: 2rem; /* Ajustado para subir el formulario */
+    text-align: left;
+    position: relative;
+    z-index: 5;
+}
+
+.info-container {
+    width: 45%;
+    padding: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    position: sticky;
+    top: 5rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+h1, .subtitle {
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para los campos de input (Correo y Contraseña) */
+input[type="email"], input[type="password"] {
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #00ffd5;
+}
+
+/* Enlaces en color celeste */
+.forgot-password, .create-account a {
+    color: #00ffd5;
+    text-decoration: none;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón de submit */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #00ffd5;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para la sección "Crear cuenta" */
+.create-account {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.create-account a {
+    display: inline-block;
+    margin-left: 0.5rem; /* Espacio entre "¿Aun no tienes cuenta?" y "Crear cuenta" */
+    color: #00ffd5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* Lista de características */
+.features-list {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.features-list li::before {
+    content: "•";
+    color: #00ffd5;
+    margin-right: 0.5rem;
+}
+
+.info-container h2, .info-container h3 {
+    text-align: center;
+}
+
+.info-container h3 {
+    margin-top: 2rem;
+}
+
+#mainTitle {
+    position: sticky;
+    top: 5rem;
+    right: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    z-index: 10;
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1.5px solid rgb(59, 58, 58);
+    border-radius: 200px;
+    padding: 0.6rem;
+    position: sticky;
+    top: 7rem;
+    right: 2rem;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-btn {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-btn:hover {
+    background-color: #00ffd5;
+    color: black;
+}
+
+.nav-btn.active {
+    background-color: #00ffd5;
+    color: black;
+}
+
+/* Estilo para los enlaces en el pie de página */
+.footer-links {
+    position: fixed; /* Asegura que el pie de página esté siempre al final */
+    bottom: 1rem; /* Ajuste la distancia desde el fondo de la pantalla */
+    left: 50%;
+    transform: translateX(-50%); /* Centra los enlaces horizontalmente */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #00ffd5; /* Celeste al pasar el mouse */
+}

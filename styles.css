@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    height: 50px; /* Ajusta la altura según lo que necesites */
+}
+
+#logo {
+    width: 70px;
+    height: auto;
+    margin-right: 60px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+h2 {
+    font-size: 1.5em;
+    color: rgb(30, 29, 29);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+a {
+    color: bl;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    height: 50px; /* Ajusta la altura según lo que necesites */
+    text-align: center; /* Asegura que el texto dentro de los enlaces esté centrado */
+}
+
+footer a {
+    margin: 0 15px; /* Agrega espacio entre los enlaces */
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    display: inline-block;
+}
+
+.social-buttons .social-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.social-buttons .social-logo:hover {
+    transform: scale(1.1);
+}

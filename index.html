@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finup - Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="finup.png" alt="Finup Logo" />
+    </div>
+
+    <div class="login-container">
+        <h1>Iniciar sesión</h1>
+        <p class="subtitle">Ingresa los datos de tu cuenta</p>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+            <a href="#" class="forgot-password">Olvidé mi contraseña</a>
+            <button type="submit" class="submit-btn">Iniciar sesión</button>
+        </form>
+        
+        <p class="create-account">
+            ¿Aun no tienes cuenta? <a href="#">Crear cuenta</a>
+        </p>
+    </div>
+
+    <div class="info-container">
+        <h2 id="mainTitle">Hacemos accesible la Educación financiera</h2>
+
+        <div class="nav-buttons">
+            <button class="nav-btn active" onclick="changeContent('whatIncludes')">¿Qué incluye?</button>
+            <button class="nav-btn" onclick="changeContent('startJourney')">Comienza tu viaje</button>
+            <button class="nav-btn" onclick="changeContent('instructors')">Instructores</button>
+        </div>
+
+        <h3 id="subTitle">Acceso ilimitado a TODO el contenido de Finup+</h3>
+        
+        <ul id="featuresList" class="features-list">
+            <li>700 capítulos.</li>
+            <li>50 módulos.</li>
+            <li>50 instructores y especialistas de finanzas, inversión y emprendimiento.</li>
+            <li>30 ebooks y plantillas descargables.</li>
+            <li>Aprendes de 12 formas distintas de invertir.</li>
+        </ul>
+
+        <div id="journeyContent" style="display: none;">
+            <p>tú escoges por dónde partir.</p>
+            <h3>VER LOS VIAJES</h3>
+            <ul>
+                <p>Viaje Despegue</p>
+                <p>Viaje Finanzas Personales</p>
+                <p>Viaje Inmobiliario</p>
+                <p>Viaje Renta Variable</p>
+                <p>Viaje Cripto</p>
+                <p>Viaje Emprendimiento</p>                
+            </ul>
+            <br>    
+            <li>Dedícale el tiempo que quieras.</li>
+            <li>Comienza desde lo más básico o lo más avanzado.</li>
+            <li>Capítulos cortos para aprender rápido y en cualquier lugar</li>
+        </div>
+
+        <div id="instructorsContent" style="display: none;">
+            <br>    
+            <h4>Aprende de los principales referentes financieros, 
+            los especialistas de grandes empresas de inversión y los emprendedores más exitosos y que más te gustan.</h4>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="privacy-policy.html">Política de privacidad</a>
+        <a href="terms-of-service.html">Acuerdo de suscripción</a>
+        <a href="about-finup.html">Acerca de Finup</a>
+        <a href="help.html">Ayuda</a>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda Finup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para justificar todo el texto dentro de los párrafos */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        footer a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00ffd5;
+        }
+
+        .feedback-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .feedback-section img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .feedback-form {
+            max-width: 55%;
+        }
+
+        .feedback-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback-form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .feedback-form input, .feedback-form textarea, .feedback-form button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .feedback-form button {
+            background-color: #00ffd5;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .feedback-form button:hover {
+            background-color: #00d9b8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" id="logo">
+        </a>
+        <h1>Centro de Ayuda Finup</h1>
+    </header>
+
+    <section>
+        <p><strong>¡Bienvenido al Centro de Ayuda!</strong></p>
+        <p>En este centro podrás encontrar respuestas a tus preguntas más frecuentes y obtener ayuda sobre nuestros servicios. Aquí te proporcionamos información útil para que aproveches al máximo nuestra plataforma de educación financiera.</p>
+
+        <p><strong>Medios de pago</strong></p>
+        <p>Puedes utilizar los medios de pago por tarjeta de crédito y débito.</p>
+
+        <!-- Nueva sección de imagen y formulario -->
+        <div class="feedback-section">
+            <img src="ayuda.png" alt="Ayuda">
+            <div class="feedback-form">
+                <p><strong>¿Tienes más preguntas?</strong></p>
+                <p>Escríbenos o dinos cómo podemos mejorar Finup en nuestro formulario de comentarios.</p>
+                <form action="mailto:hola@Finup.pro" method="post" enctype="text/plain">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                    <label for="comments">Comparte tus comentarios aquí</label>
+                    <textarea id="comments" name="comments" placeholder="Escribe tus comentarios..." required></textarea>
+
+                    <button type="submit">ENVIAR COMENTARIO</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/finup.latam" target="_blank" title="Facebook">
+            <img src="facebook.png" alt="Facebook" class="social-logo">
+        </a>
+        <a href="https://www.linkedin.com/company/finuplatam/" target="_blank" title="LinkedIn">
+            <img src="linkedin.png" alt="LinkedIn" class="social-logo">
+        </a>
+        <a href="https://www.instagram.com/finuplatam/" target="_blank" title="Instagram">
+            <img src="social.png" alt="Instagram" class="social-logo">
+        </a>
+        <a href="https://www.youtube.com/channel/UCGTQpNSyu2fVpu-smuLuVQw" target="_blank" title="YouTube">
+            <img src="youtube.png" alt="YouTube" class="social-logo">
+        </a>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" id="logo">
+            </a>
+            <a href="privacy-policy.html">Política de privacidad</a>
+            <a href="terms-of-service.html">Acuerdo de suscripción</a>
+            <a href="about-finup.html">Acerca de Finup</a>
+            <a href="help.html">Ayuda</a>
+        </div>
+    </footer>
+</body>
+</html>
