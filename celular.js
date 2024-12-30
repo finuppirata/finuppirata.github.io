@@ -7,7 +7,7 @@ function changeFooterText() {
         // Cambiar los textos de los enlaces en modo móvil
         footerLinks[1].textContent = 'Política';
         footerLinks[2].textContent = 'Acuerdo';
-        footerLinks[3].textContent = 'Acerca de';
+        footerLinks[3].textContent = 'Acerca ';
         footerLinks[4].textContent = 'Ayuda';
     } else {
         // Restaurar los textos originales si no está en móvil
