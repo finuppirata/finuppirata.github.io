@@ -71,8 +71,12 @@ footer {
 }
 
 footer a {
-    margin: 0 15px; /* Agrega espacio entre los enlaces */
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00ffd5;
 }
+
+
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -105,11 +109,18 @@ footer a {
     }
 
     footer a {
-        margin: 0 10px;
+        margin: 0 1px;
     }
 
-   #logo {
+    #logo {
         margin-right: -20px; /* Ajusta el margen para móviles, si es necesario */
-        margin-left: -8%;
+        margin-left: -13%;
     }
+    
+    footer a {
+        margin: 0 1px;
+        text-decoration: none;
+        color: #00ffd5;
+    }
+
 }
