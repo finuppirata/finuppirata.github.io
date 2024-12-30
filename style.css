@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -28,27 +29,26 @@ body {
     height: auto;
 }
 
-.login-container {
-    width: 45%;
+.login-container, .info-container {
     padding: 2rem;
-    margin-top: 2rem; /* Ajustado para subir el formulario */
-    text-align: left;
     position: relative;
     z-index: 5;
 }
 
+.login-container {
+    width: 45%;
+    margin-top: 2rem; /* Ajustado para subir el formulario */
+    text-align: left;
+}
+
 .info-container {
     width: 45%;
-    padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 0 rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    position: sticky;
     top: 5rem;
-    right: 2rem;
-    z-index: 10;
 }
 
 h1, .subtitle {
@@ -68,7 +68,6 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-/* Estilo para los campos de input (Correo y Contraseña) */
 input[type="email"], input[type="password"] {
     background-color: black;
     color: white;
@@ -86,7 +85,6 @@ input[type="email"]:focus, input[type="password"]:focus {
     border-color: #00ffd5;
 }
 
-/* Enlaces en color celeste */
 .forgot-password, .create-account a {
     color: #00ffd5;
     text-decoration: none;
@@ -97,7 +95,6 @@ input[type="email"]:focus, input[type="password"]:focus {
     margin-bottom: 1.5rem;
 }
 
-/* Botón de submit */
 .submit-btn {
     width: 100%;
     padding: 1rem;
@@ -110,7 +107,6 @@ input[type="email"]:focus, input[type="password"]:focus {
     margin-bottom: 1.5rem;
 }
 
-/* Estilo para la sección "Crear cuenta" */
 .create-account {
     text-align: center;
     margin-top: 1rem;
@@ -118,7 +114,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 
 .create-account a {
     display: inline-block;
-    margin-left: 0.5rem; /* Espacio entre "¿Aun no tienes cuenta?" y "Crear cuenta" */
+    margin-left: 0.5rem;
     color: #00ffd5;
     text-decoration: none;
     font-weight: bold;
@@ -128,7 +124,6 @@ input[type="email"]:focus, input[type="password"]:focus {
     text-decoration: underline;
 }
 
-/* Lista de características */
 .features-list {
     margin-top: 2rem;
     text-align: left;
@@ -154,9 +149,7 @@ input[type="email"]:focus, input[type="password"]:focus {
 }
 
 #mainTitle {
-    position: sticky;
     top: 5rem;
-    right: 2rem;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.5rem;
     z-index: 10;
@@ -170,11 +163,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     padding: 0.5rem;
     border: 1.5px solid rgb(59, 58, 58);
     border-radius: 200px;
-    padding: 0.6rem;
-    position: sticky;
     top: 7rem;
-    right: 2rem;
-    z-index: 10;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -198,17 +187,16 @@ input[type="email"]:focus, input[type="password"]:focus {
     color: black;
 }
 
-/* Estilo para los enlaces en el pie de página */
 .footer-links {
-    position: fixed; /* Asegura que el pie de página esté siempre al final */
-    bottom: 1rem; /* Ajuste la distancia desde el fondo de la pantalla */
+    position: fixed;
+    bottom: 1rem;
     left: 50%;
-    transform: translateX(-50%); /* Centra los enlaces horizontalmente */
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     font-size: 1rem;
-    color: white; /* Asegura que el texto sea blanco */
+    color: white;
 }
 
 .footer-links a {
@@ -218,5 +206,72 @@ input[type="email"]:focus, input[type="password"]:focus {
 }
 
 .footer-links a:hover {
-    color: #00ffd5; /* Celeste al pasar el mouse */
+    color: #00ffd5;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        top: 1rem;
+        left: 2rem;
+    }
+
+    .login-container, .info-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    /* Reducir el espacio de "Iniciar sesión" */
+    .login-container {
+        margin-top: 5rem; /* Reduce el margen superior para separar más del logo */
+    }
+
+    /* Subir el espacio de "Hacemos accesible" */
+    .info-container {
+        margin-top: 1.5rem; /* Reducido el espacio entre "Iniciar sesión" y el título */
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Hacemos accesible título: ajustamos la distancia */
+    #mainTitle {
+        background-color: transparent;
+        padding: 0.5rem 0;
+        position: relative;
+        margin-top: -10rem; /* Reduce el margen superior para acercar más el título */
+        margin-bottom: 5rem; /* Reducir el espacio debajo del título */
+        z-index: 10;
+    }
+
+    /* Ajustes para el footer */
+    .footer-links {
+        position: relative;
+        margin-top: 9rem; /* Espaciado adecuado para no sobreponer el footer */
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: #00ffd5;
+    }
 }

@@ -20,11 +20,12 @@ header {
     width: 70px;
     height: auto;
     margin-right: 60px;
+
 }
 
 h1 {
     color: white;
-    margin: 0;
+    margin: 1rem;
 }
 
 section {
@@ -92,4 +93,22 @@ footer a {
 
 .social-buttons .social-logo:hover {
     transform: scale(1.1);
+}
+#logo {
+    margin-right: 10px; /* Reduce el espacio entre el logo y el primer enlace */
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 5px;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+
+    #logo {
+        margin-right: 1px; /* Ajusta el margen para móviles, si es necesario */
+    }
 }
