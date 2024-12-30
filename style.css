@@ -71,13 +71,17 @@ h1 {
 input[type="email"], input[type="password"] {
     background-color: black;
     color: white;
-    border: 2px solid transparent;
+    border-color: 2px #00ffd5;
     padding: 1rem;
     border-radius: 8px;
     width: 100%;
     font-size: 1rem;
     margin-bottom: 1rem;
     transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #00ffd5;  /* Celeste al recibir foco */
 }
 
 input[type="email"]:focus, input[type="password"]:focus {
@@ -160,12 +164,15 @@ input[type="email"]:focus, input[type="password"]:focus {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
-    padding: 0.5rem;
+    margin-left: 45px;
+    padding: 0.2rem;  /* Reducir el padding para que el área alrededor de los botones no sea tan ancha */
     border: 1.5px solid rgb(59, 58, 58);
-    border-radius: 200px;
+    border-radius: 200px;  /* Mantener el border-radius para que coincida con los botones */
     top: 7rem;
     background-color: rgba(0, 0, 0, 0.7);
+    width: 400px; /* Ajusta el tamaño del contorno para que se ajuste al tamaño de los botones */
 }
+
 
 .nav-btn {
     padding: 0.7rem 1.2rem;
@@ -175,6 +182,8 @@ input[type="email"]:focus, input[type="password"]:focus {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
+    width: 120px;
+    height: 45px;
 }
 
 .nav-btn:hover {
@@ -247,7 +256,7 @@ input[type="email"]:focus, input[type="password"]:focus {
         background-color: transparent;
         padding: 0.5rem 0;
         position: relative;
-        margin-top: -10rem; /* Reduce el margen superior para acercar más el título */
+        margin-top: -1rem; /* Reduce el margen superior para acercar más el título */
         margin-bottom: 5rem; /* Reducir el espacio debajo del título */
         z-index: 10;
     }
@@ -255,7 +264,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     /* Ajustes para el footer */
     .footer-links {
         position: relative;
-        margin-top: 9rem; /* Espaciado adecuado para no sobreponer el footer */
+        margin-top: 10rem; /* Espaciado adecuado para no sobreponer el footer */
         padding-top: 2rem;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
@@ -273,5 +282,33 @@ input[type="email"]:focus, input[type="password"]:focus {
 
     .footer-links a:hover {
         color: #00ffd5;
+    }
+
+    /* Ajuste para los botones de navegación en móvil */
+    .nav-buttons {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 10px;
+        padding: 0.5rem;
+        border: 1.5px solid rgb(59, 58, 58);
+        border-radius: 200px;
+        top: 7rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: calc(100% + 2%); /* Aumenta el tamaño del borde en dispositivos móviles */
+    }
+
+    .nav-btn {
+        padding: 0.5rem 1rem; /* Ajusta el tamaño de los botones en dispositivos pequeños */
+    }
+
+    .nav-btn:hover {
+        background-color: #00ffd5;
+        color: black;
+    }
+
+    .nav-btn.active {
+        background-color: #00ffd5;
+        color: black;
     }
 }
