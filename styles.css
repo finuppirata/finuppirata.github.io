@@ -107,13 +107,8 @@ footer a {
         justify-content: space-around;
         padding: 10px 5px;
     }
-
-    footer a {
-        margin: 0 1px;
-    }
-
     #logo {
-        margin-right: -20px; /* Ajusta el margen para móviles, si es necesario */
+        margin-right: -30px; /* Ajusta el margen para móviles, si es necesario */
         margin-left: -13%;
     }
     
